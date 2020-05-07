@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+
+    android:elevation="25dp"
+    android:padding="10dp"
+    app:cardCornerRadius="20dp">
+
+
+    <!--<LinearLayout-->
+
+    <!--android:id="@+id/linear_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/movie_image"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@mipmap/ic_launcher"-->
+    <!--android:padding="5dp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/movie_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:elevation="20dp"-->
+    <!--android:text="Hello world"-->
+    <!--android:padding="5dp"-->
+    <!---->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+
+    <!--</LinearLayout>-->
+    <RelativeLayout
+
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:transitionName="transiton"/>
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_image"
+            android:layout_marginTop="-40dp"
+            android:elevation="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="5dp"
+            android:text="Hello world"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
